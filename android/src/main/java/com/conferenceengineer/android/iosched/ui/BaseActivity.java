@@ -52,7 +52,7 @@ public abstract class BaseActivity extends ActionBarActivity {
                 != Configuration.ORIENTATION_LANDSCAPE) {
             // Only show the tab bar's shadow
             getSupportActionBar().setBackgroundDrawable(
-                new ColorDrawable(getResources().getColor(R.color.accent_1)));
+                new ColorDrawable(getResources().getColor(R.color.accent)));
         }
     }
 

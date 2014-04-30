@@ -20,7 +20,7 @@
     android:paddingLeft="8dp"
     android:paddingRight="8dp"
     android:gravity="center_vertical"
-    android:textColor="@color/accent_1"
+    android:textColor="@color/accent"
     android:textAllCaps="true"
     android:textStyle="bold"
     android:textSize="@dimen/text_size_medium"

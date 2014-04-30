@@ -37,7 +37,7 @@
         <item name="android:layout_weight">1</item>
         <item name="android:textAlignment">viewStart</item>
         <item name="android:textSize">@dimen/text_size_small</item>
-        <item name="android:textColor">@color/accent_1</item>
+        <item name="android:textColor">@color/accent</item>
     </style>
     <!--<item name="android:gravity">start</item>-->
 
@@ -102,7 +102,7 @@
         <item name="android:paddingBottom">@dimen/stream_item_content_padding</item>
         <item name="android:ellipsize">end</item>
         <item name="android:textColor">@color/stream_content_text_color</item>
-        <item name="android:textColorLink">@color/accent_1</item>
+        <item name="android:textColorLink">@color/accent</item>
         <item name="android:textSize">@dimen/stream_content_text_size</item>
         <item name="android:visibility">visible</item>
         <item name="android:textAlignment">viewStart</item>

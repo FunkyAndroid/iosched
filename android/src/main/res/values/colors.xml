@@ -23,7 +23,9 @@
     <color name="body_text_1_inverse">#ffffffff</color>
     <color name="body_text_2_inverse">#99ffffff</color>
 
-    <color name="accent_1">#ccd2a2</color>
+    <color name="accent">#ccd2a2</color>
+    <color name="accent_list_bg">#20ccd2a2</color> <!-- Keep AA = 20, RRGGBB = accent_1 -->
+       <!-- Also remember to change transparent_background_pattern_tile_accent -->
 
     <color name="all_track_color">#ff222222</color>
     <color name="home_pane_header">#99000000</color>

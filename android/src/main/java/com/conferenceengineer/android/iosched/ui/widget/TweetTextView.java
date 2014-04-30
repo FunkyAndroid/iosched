@@ -50,7 +50,7 @@ public class TweetTextView extends TextView {
         }
         else {
             final Resources resources = getResources();
-            mHighlightColor = resources.getColor(R.color.accent_1);
+            mHighlightColor = resources.getColor(R.color.accent);
             mUrlHighlightColor = resources.getColor(R.color.body_text_1);
         }
     }

@@ -277,7 +277,7 @@
         <item name="android:textSize">@dimen/text_size_small</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textAllCaps">true</item>
-        <item name="android:textColor">@color/accent_1</item>
+        <item name="android:textColor">@color/accent</item>
         <item name="android:paddingTop">4dp</item>
         <item name="android:paddingBottom">4dp</item>
         <item name="android:background">@drawable/accent_bottom_border</item>
@@ -387,7 +387,7 @@
         <item name="android:layout_weight">1</item>
         <item name="android:gravity">left</item>
         <item name="android:textSize">@dimen/text_size_small</item>
-        <item name="android:textColor">@color/accent_1</item>
+        <item name="android:textColor">@color/accent</item>
     </style>
 
     <style name="FeedbackQuestionGuideText.Right">
@@ -478,7 +478,7 @@
         <item name="android:paddingBottom">@dimen/stream_item_content_padding</item>
         <item name="android:ellipsize">end</item>
         <item name="android:textColor">@color/stream_content_text_color</item>
-        <item name="android:textColorLink">@color/accent_1</item>
+        <item name="android:textColorLink">@color/accent</item>
         <item name="android:textSize">@dimen/stream_content_text_size</item>
         <item name="android:visibility">visible</item>
         <item name="android:textAlignment">viewStart</item>
