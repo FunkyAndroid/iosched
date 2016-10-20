@@ -495,6 +495,7 @@ public class BrowseSessionsActivity extends BaseActivity implements SessionsFrag
             menu.removeItem(R.id.menu_wifi);
             menu.removeItem(R.id.menu_debug);
             menu.removeItem(R.id.menu_about);
+            menu.removeItem(R.id.menu_i_o_hunt);
             if(!canHandleMapOption()) {
                 menu.removeItem(R.id.menu_map);
             }
