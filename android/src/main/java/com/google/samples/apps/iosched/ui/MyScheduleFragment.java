@@ -48,6 +48,12 @@ public class MyScheduleFragment extends ListFragment {
         return mRoot;
     }
 
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        setListAdapter(null);
+    }
+
     public void setContentDescription(String desc) {
         mContentDescription = desc;
         if (mRoot != null) {
