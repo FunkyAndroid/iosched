@@ -51,6 +51,7 @@ import com.bumptech.glide.request.bitmap.RequestListener;
 import com.bumptech.glide.request.target.Target;
 import com.google.android.gms.plus.PlusOneButton;
 import com.google.android.youtube.player.YouTubeIntents;
+import com.google.samples.apps.iosched.BuildConfig;
 import com.google.samples.apps.iosched.Config;
 import com.google.samples.apps.iosched.R;
 import com.google.samples.apps.iosched.model.TagMetadata;
@@ -1085,6 +1086,10 @@ public class SessionDetailActivity extends BaseActivity implements
         getMenuInflater().inflate(R.menu.session_detail, menu);
         mSocialStreamMenuItem = menu.findItem(R.id.menu_social_stream);
         mShareMenuItem = menu.findItem(R.id.menu_share);
+        if (BuildConfig.USE_EXTERNAL_MAPS) {
+            menu.removeItem(R.id.menu_map_room);
+        }
+
         tryExecuteDeferredUiOperations();
         return true;
     }
