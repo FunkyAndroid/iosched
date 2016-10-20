@@ -92,12 +92,13 @@
             <TextView
                 android:id="@+id/slot_title"
                 android:layout_width="wrap_content"
-                android:layout_height="36dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
                 android:gravity="bottom"
                 android:text="@string/placeholder_session_title"
                 android:textSize="@dimen/text_size_large"
                 android:ellipsize="end"
-                android:maxLines="1" />
+                android:maxLines="@integer/my_schedule_session_title_max_lines" />
 
             <TextView
                 android:id="@+id/slot_subtitle"

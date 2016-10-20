@@ -1,5 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-
 <!--
   Copyright 2014 Google Inc. All rights reserved.
 
@@ -16,15 +14,71 @@
   limitations under the License.
   -->
 
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_height="wrap_content"
-    android:layout_width="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:paddingBottom="8dp"
+              android:paddingLeft="@dimen/keyline_1"
+              android:paddingRight="@dimen/keyline_1"
+              android:orientation="horizontal"
+              android:layout_height="wrap_content"
+              android:layout_width="match_parent">
 
-    <include
-        layout="@layout/widget_schedule_item"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    <!--Start and end times -->
 
-    </include>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="@dimen/widget_schedule_time_width"
+        android:layout_height="match_parent">
 
-</FrameLayout>
+        <TextView
+            android:id="@+id/start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:gravity="bottom"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/body_text_2"/>
+
+        <TextView
+            android:id="@+id/end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_small"
+            android:textColor="@color/body_text_3"/>
+
+        <TextView
+            android:id="@+id/conflict_warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_small"
+            android:textColor="@color/my_schedule_conflict"
+            android:text="@string/schedule_conflict_with_previous"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <!-- Block/slot chip contents -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:id="@+id/box"
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:layout_height="match_parent"
+                 android:background="@drawable/schedule_item_break"
+                 android:paddingLeft="16dp"
+                 android:paddingRight="8dp"
+                 android:paddingTop="12dp"
+                 android:paddingBottom="12dp">
+
+        <TextView
+            android:id="@+id/slot_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_large"
+            android:ellipsize="end"
+            android:maxLines="3"/>
+
+        <TextView
+            android:id="@+id/slot_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_small"/>
+
+    </LinearLayout>
+</LinearLayout>

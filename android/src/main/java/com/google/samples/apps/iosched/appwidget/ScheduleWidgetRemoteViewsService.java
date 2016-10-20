@@ -212,8 +212,6 @@ public class ScheduleWidgetRemoteViewsService extends RemoteViewsService {
                     rv.setOnClickFillInIntent(R.id.box, fillIntent);
 
                 } else if (item.type == ScheduleItem.BREAK) {
-                    rv.setImageViewResource(R.id.background_image, R.drawable.schedule_item_break);
-
                     rv.setTextViewText(R.id.slot_title, item.title);
                     rv.setTextColor(R.id.slot_title, mContext.getResources().getColor(R.color.body_text_1));
 
